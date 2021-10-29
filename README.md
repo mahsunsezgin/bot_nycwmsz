@@ -13,6 +13,10 @@ Requests kütüphanesini projemizde kullanmak için ilgili kütüphaneyi çağı
 ```python
 import requests
 ```
+BeautifulSoup kütüphanesini dahil ediyoruz.
+```python
+from bs4 import BeautifulSoup
+```
 Kod düzenimizi standartlara uygun seviyede tutmak için pylint aracını terminal ekranından aşağıdaki gibi yüklüyoruz
 ```
 pip install pylint
