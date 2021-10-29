@@ -7,7 +7,7 @@ url = "https://www.nytimes.com/crosswords/game/mini"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
 
-tablo = soup.find_all("section",{"class":"Layout-clueLists--10_Xl"})
-
+tablo = soup.find_all("section",attrs={"class":"Layout-clueLists--10_Xl"})
 print(tablo[0].text)
 
+data = json.loads(response.txt)
