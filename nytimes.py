@@ -10,4 +10,3 @@ soup = BeautifulSoup(response.content, "html.parser")
 tablo = soup.find_all("section",attrs={"class":"Layout-clueLists--10_Xl"})
 print(tablo[0].text)
 
-data = json.loads(response.txt)
